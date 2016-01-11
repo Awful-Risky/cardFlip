@@ -1,0 +1,51 @@
+/*
+	Put your custom CSS here.
+
+	You may find these CSS3 properties useful:;
+		transition
+		-webkit-transform
+		-webkit-transform-style
+		-webkit-backface-visibility
+*/
+
+/*
+	Starter styles (do not edit)
+*/
+
+
+.portfolio-item:hover .front {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);	
+}
+
+.portfolio-item:hover .back {
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+.front, .back {
+	background: #CCC;
+	border-radius: 10px;
+}
+
+.front {
+	-webkit-transition: 2s;
+	transition: 2s;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.back {
+	-webkit-transition: 2s;
+	transition: 2s;
+	position: relative;
+	padding: 20px;
+	width: 160px;
+	height: 160px;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
